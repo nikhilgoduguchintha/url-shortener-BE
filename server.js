@@ -18,6 +18,8 @@ import { notFound } from "./middleware/notFound.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.set("trust proxy", true);
+
 // Security middleware
 app.use(helmet());
 
