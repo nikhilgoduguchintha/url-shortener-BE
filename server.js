@@ -23,7 +23,11 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3001"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3001",
+      "https://url-shortener-fe-tycp.onrender.com",
+    ],
     credentials: true,
   })
 );
